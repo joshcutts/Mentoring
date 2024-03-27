@@ -1,9 +1,13 @@
 class Mapping
   def initialize(raw_mapping)
-    @destination_range_start = raw_mapping.split[0].to_i
+    @numbers = raw_mapping.split.map(&:to_i)
   end
 
   def destination_range_start
-    @destination_range_start
+    @numbers[0]
+  end
+
+  def source_range_start
+    @numbers[1]
   end
 end
