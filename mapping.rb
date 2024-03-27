@@ -10,4 +10,8 @@ class Mapping
   def source_range_start
     @numbers[1]
   end
+
+  def source_range_length
+    @numbers[2]
+  end
 end

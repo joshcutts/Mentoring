@@ -10,4 +10,9 @@ describe Mapping do
     mapping = Mapping.new("50 98 2")
     expect(mapping.source_range_start).to eq(98)
   end
+
+  it 'parses source range length' do
+    mapping = Mapping.new("50 98 2")
+    expect(mapping.source_range_length).to eq(2)
+  end
 end
