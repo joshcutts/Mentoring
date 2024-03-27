@@ -1,4 +1,4 @@
-class Mapping
+class RangeDefinition
   def initialize(raw_mapping)
     @numbers = raw_mapping.split.map(&:to_i)
   end

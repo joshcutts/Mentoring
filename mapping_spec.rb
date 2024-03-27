@@ -1,18 +1,18 @@
 require_relative 'mapping'
 
-describe Mapping do
+describe RangeDefinition do
   it 'parses destination range start' do
-    mapping = Mapping.new("50 98 2")
-    expect(mapping.destination_range_start).to eq(50)
+    range_definition = RangeDefinition.new("50 98 2")
+    expect(range_definition.destination_range_start).to eq(50)
   end
 
   it 'parses source range start' do
-    mapping = Mapping.new("50 98 2")
-    expect(mapping.source_range_start).to eq(98)
+    range_definition = RangeDefinition.new("50 98 2")
+    expect(range_definition.source_range_start).to eq(98)
   end
 
   it 'parses source range length' do
-    mapping = Mapping.new("50 98 2")
-    expect(mapping.source_range_length).to eq(2)
+    range_definition = RangeDefinition.new("50 98 2")
+    expect(range_definition.source_range_length).to eq(2)
   end
 end
